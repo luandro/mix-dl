@@ -11,7 +11,6 @@ const path = require('path');
 
 // Debug
 const debugList = 'PLmZ-tcwzKMWbRRP8RbqtG4jA51ULwvBkj';
-
 // Get Mix url from scrapping Youtube
 console.log('Loading...')
 
@@ -19,7 +18,7 @@ const findAndDownloadMix = (artists, numberOfSongs, folderName, verbose, minimum
   console.log('Downloading ', numberOfSongs);
   scrapeForMixes(artists, debugMode).then(mixArray => {
     // Download with yotube-dl
-    const songFolder = `${__dirname}/${folderName}`;
+    const songFolder = `${process.env.PWD}/${folderName}`;
     console.log('Downloading to ', songFolder);
     if (!fs.existsSync(songFolder)) {
       fs.mkdirSync(songFolder);
