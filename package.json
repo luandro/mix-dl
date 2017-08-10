@@ -1,0 +1,35 @@
+{
+  "name": "mix-dl",
+  "version": "1.0.0",
+  "description": "Download youtube mix for list of artists using youtube-dl.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "mix-dl": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luandro/mix-dl.git"
+  },
+  "keywords": [
+    "youtube-dl",
+    "youtube",
+    "mix",
+    "song",
+    "download"
+  ],
+  "author": "Luandro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luandro/mix-dl/issues"
+  },
+  "homepage": "https://github.com/luandro/mix-dl#readme",
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "flatten-array": "^1.0.0",
+    "minimist": "^1.2.0",
+    "scrape-it": "^3.3.2"
+  }
+}
